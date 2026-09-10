@@ -1,19 +1,38 @@
+import { LeftPanel } from "@/components/left-panel"
+import { RightPanel } from "@/components/right-panel"
 import { Button } from "@/components/ui/button"
+import { Flex } from "@/components/ui/flex"
+import { Separator } from "@/components/ui/separator"
+import { ExternalLink } from "lucide-react"
+import Link from "next/link"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Janek Zagórski - CV'
+}
 
 export default function Page() {
-  return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
-  )
+    return (
+        <Flex className="relative w-[210mm] h-[297mm] p-[15mm] mx-auto shadow-lg print:shadow-none print:w-[210mm] print:p-[15mm] print:m-0">
+
+            <Flex className="absolute top-4 right-4 flex-row gap-2">
+                <Link href='https://janek-cv.varely.co/' target='_blank'>
+                    <Button size='xs'>
+                        Zobacz CV w internecie <ExternalLink />
+                    </Button>
+                </Link>
+            </Flex>
+
+            <Flex className="flex-row gap-8">
+                <LeftPanel />
+                <Separator orientation='vertical' />
+                <RightPanel />
+            </Flex>
+
+            <Flex className="absolute left-2 bottom-2 text-xs text-muted-foreground">
+                Ten dokument jest interaktywny. Linki do np. social media albo stron internetowych można klikać.
+            </Flex>
+
+        </Flex>
+    )
 }
