@@ -56,10 +56,11 @@ export const me = {
     ],
     projects: [
         {
-            title: "Integracja LMS z KSEF (+ Fakturownia)",
-            dates: '03.2026 - teraz',
-            duties: ['Klient ma stary program LMS, który nie posiada integracji z KSEF. Dlatego napisałem customowy program pod jego wymagania. Teraz klika 1 przycisk: faktury są wysyłane do Fakturowni a później do KSEF.'],
-            technologies: ['Python', 'HTML', 'REST API', 'MySQL'],
+            title: "Varely Cams - oglądanie kamer nad morzem",
+            description: 'https://eye.varely.co/',
+            dates: 'obecnie',
+            duties: ['Projekt umożliwiający oglądanie kamer (pogodowych) w nadmorskich miejscowościach za DARMO. Można wyszukiwać, filtrować, oceniać, dodawać do ulubionych oraz pisać na czacie.'],
+            technologies: ['React / Next.js', 'Python', 'REST API', 'Postgres', 'Docker'],
         },
         {
             title: "Varely Search - moja własna wyszukiwarka",
