@@ -76,14 +76,19 @@ export function LeftPanel() {
             <Section size='sm'>
                 <SectionTitle>Linki do projektów</SectionTitle>
                 <SectionContent className="gap-1">
-                    <Link href='https://www.varely.co/pl/about-janek' target='_blank'>
+                    <Link href='https://eye.varely.co' target='_blank'>
                         <Button size='xs' variant='outline'>
-                            Strona internetowa <ExternalLink />
+                            Podgląd kamer nad morzem <ExternalLink />
                         </Button>
                     </Link>
                     <Link href='https://search.varely.co' target='_blank'>
                         <Button size='xs' variant='outline'>
                             Wyszukiwarka internetowa <ExternalLink />
+                        </Button>
+                    </Link>
+                    <Link href='https://www.varely.co/pl/about-janek' target='_blank'>
+                        <Button size='xs' variant='outline'>
+                            Strona internetowa <ExternalLink />
                         </Button>
                     </Link>
                 </SectionContent>
