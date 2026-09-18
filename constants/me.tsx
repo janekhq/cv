@@ -1,5 +1,6 @@
 import { Bun } from "@/components/icons/bun";
 import { Cloudflare } from "@/components/icons/cloudflare";
+import { Figma } from "@/components/icons/figma";
 import { Github } from "@/components/icons/github";
 import { PostgreSQL } from "@/components/icons/postgresql";
 import { Swagger } from "@/components/icons/swagger";
@@ -36,6 +37,7 @@ export const me = {
         { name: "Tailwind", icon: <Tailwind /> },
         { name: "Bun", icon: <Bun /> },
         { name: "Cloudflare", icon: <Cloudflare /> },
+        { name: "Figma", icon: <Figma /> },
     ],
     languages: [
         { name: 'Polski', flag: 'pl', level: "ojczysty" },
@@ -85,6 +87,6 @@ export const me = {
         'Rozwój osobisty',
         'Łamanie zabezpieczeń stron internetowych 🤫',
         'Umiejętność nauki dowolnej rzeczy w 20 godzin',
-        'Od 3 dni siłownia 💪'
+        'Od 15 dni siłownia 💪'
     ]
 }
