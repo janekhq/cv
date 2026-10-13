@@ -16,7 +16,7 @@ export default function Page() {
         <Flex className="relative w-[210mm] h-[297mm] p-[15mm] mx-auto shadow-lg print:shadow-none print:w-[210mm] print:p-[15mm] print:m-0">
 
             <Flex className="absolute top-4 right-4 flex-row gap-2">
-                <Link href='https://janek-cv.varely.co/' target='_blank'>
+                <Link href='https://cv.janzagorski.pl/' target='_blank'>
                     <Button size='xs'>
                         Zobacz CV w internecie <ExternalLink />
                     </Button>
