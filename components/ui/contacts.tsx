@@ -10,10 +10,10 @@ export function Contacts({ children }: { children?: React.ReactNode }) {
     )
 }
 
-export function ContactItem({ href, children }: { href?: string, children?: React.ReactNode }) {
+export function ContactItem({ href, target, children }: { href?: string, target?: string, children?: React.ReactNode }) {
     return (
         <Flex className="flex-row">
-            <Button variant='ghost' size='xs' className='-translate-x-3' render={href ? <Link href={href} /> : undefined} nativeButton={!href}>
+            <Button variant='ghost' size='xs' className='-translate-x-3' render={href ? <Link href={href} target={target} /> : undefined} nativeButton={!href}>
                 {children}
             </Button>
         </Flex>

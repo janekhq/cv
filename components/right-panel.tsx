@@ -2,8 +2,9 @@ import { Flex } from "./ui/flex";
 import { me } from "@/constants/me";
 import { Section, SectionContent, SectionTitle } from "./ui/section";
 import { WorkExperience } from "./work-experience";
-import { Item, ItemContent, ItemDescription, ItemTitle } from "./ui/item";
+import { Item, ItemContent, ItemDescription, ItemMedia, ItemTitle } from "./ui/item";
 import { Container } from "./ui/container";
+import { Star } from "lucide-react";
 
 export function RightPanel() {
     return (
@@ -37,7 +38,10 @@ export function RightPanel() {
                         <Flex key={index} className="gap-2">
                             <WorkExperience {...school} />
                             {school.certificates.map((cert, certIndex) => (
-                                <Item key={certIndex} variant='outline' size='xs'>
+                                <Item key={certIndex} variant='outline' size='xs' className="relative">
+                                    <ItemMedia variant='icon'>
+                                        <Star className="fill-amber-400" />
+                                    </ItemMedia>
                                     <ItemContent>
                                         <ItemTitle className="text-xs">{cert.title}</ItemTitle>
                                         <ItemDescription className="text-xs">

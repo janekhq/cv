@@ -13,7 +13,7 @@ export const me = {
     about: 'Programista od dekady. Od kilku lat tworzę aplikacje używając nowoczesnych technologii. Buduję też różne automatyzacje w n8n lub Pythonie oraz wdrażam projekty w środowiskach Docker. Poza pracą samodzielnie realizuję projekty dla klientów prywatnych.',
     contact: {
         phone: "+48 730 355 879",
-        email: "janekzagorski@proton.me",
+        email: "jan@janzagorski.pl",
         city: "Poznań, Polska",
         github_name: "janekhq",
         github_url: "https://github.com/janekhq/",
@@ -23,7 +23,7 @@ export const me = {
     skills: [
         { name: 'HTML, CSS, JS', stars: 4, imgSrc: '/images/html-5.svg' },
         { name: 'React / Next.js', stars: 4, imgSrc: '/images/react.svg' },
-        { name: 'React Native / Expo', stars: 4, imgSrc: '/images/expo.svg' },
+        { name: 'React Native / Expo', stars: 3, imgSrc: '/images/expo.svg' },
         { name: 'Python', stars: 4, imgSrc: '/images/python.svg' },
         { name: 'Docker + Coolify', stars: 3, imgSrc: '/images/docker.svg' },
         { name: 'n8n / automatyzacje', stars: 5, imgSrc: '/images/n8n.svg' },
@@ -60,14 +60,14 @@ export const me = {
         {
             title: "Varely Cams - oglądanie kamer nad morzem",
             description: 'https://eye.varely.co/',
-            dates: 'obecnie',
+            dates: '',
             duties: ['Projekt umożliwiający oglądanie kamer (pogodowych) w nadmorskich miejscowościach za DARMO. Można wyszukiwać, filtrować, oceniać, dodawać do ulubionych oraz pisać na czacie.'],
             technologies: ['React / Next.js', 'Python', 'REST API', 'Postgres', 'Docker'],
         },
         {
             title: "Varely Search - moja własna wyszukiwarka",
             description: 'https://search.varely.co/',
-            dates: 'obecnie',
+            dates: '',
             duties: ['Wyszukiwanie informacji, grafika, filmy, wiadomości, rozmowa z AI.'],
             technologies: ['React / Next.js', 'REST API', 'n8n'],
         },
@@ -87,6 +87,6 @@ export const me = {
         'Rozwój osobisty',
         'Łamanie zabezpieczeń stron internetowych 🤫',
         'Umiejętność nauki dowolnej rzeczy w 20 godzin',
-        'Od 15 dni siłownia 💪'
+        'Od 30 dni siłownia 💪'
     ]
 }

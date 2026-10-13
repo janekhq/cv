@@ -17,7 +17,7 @@ export function LeftPanel() {
     return (
         <Container className="flex-1/3">
             <Flex className="gap-1">
-                <Flex className="max-w-35 max-h-35 overflow-hidden rounded-4xl mb-1">
+                <Flex className="max-w-35 max-h-35 overflow-hidden rounded-2xl mb-1">
                     {/* było translate-y-4 gdy rodzic nie miał flex-row */}
                     <Image className="w-full h-full object-cover scale-300 translate-x-3 translate-y-9" src='/images/jaaa.jpg' alt="Janek Zagórski" width={960} height={1280} />
                 </Flex>
@@ -35,10 +35,10 @@ export function LeftPanel() {
                 <ContactItem>
                     <MapPin /> {me.contact.city}
                 </ContactItem>
-                <ContactItem href={me.contact.github_url}>
+                <ContactItem href={me.contact.github_url} target='_blank'>
                     <Github /> {me.contact.github_name}
                 </ContactItem>
-                <ContactItem href={me.contact.linkedin_url}>
+                <ContactItem href={me.contact.linkedin_url} target='_blank'>
                     <LinkedIn /> {me.contact.linkedin_name}
                 </ContactItem>
             </Contacts>
